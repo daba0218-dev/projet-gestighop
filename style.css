@@ -1,0 +1,171 @@
+body {
+    background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #f2f5f8;
+}
+
+#formulaire {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 15px;
+}
+
+.champ {
+  display: flex;
+  flex-direction: column;
+}
+
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.erreur {
+  color: red;
+  font-size: 12px;
+  margin-top: 3px;
+}
+.boutons {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#btn-valider {
+  background-color: #1f4e79;
+}
+
+#btn-annuler {
+  background-color: #888;
+}
+table {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th {
+  background-color: #1f4e79;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+td {  
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {   /* Style pour les lignes paires */
+  background-color: #f2f2f2;
+}
+.barre {
+  max-width: 900px;
+  margin: 20px auto;
+  display: flex;
+  gap: 10px;
+}
+
+#recherche {
+  flex: 1;
+}
+#btn-reinitialiser {
+  background-color: #c0392b;
+}
+
+#message-vide {
+  max-width: 900px;
+  margin: 20px auto;
+  text-align: center;
+  color: #f5f4f4;
+}
+
+.stats {
+  max-width: 900px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.stats div {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stats strong {
+  display: block;
+  font-size: 22px;
+  color: #1f4e79;
+  margin-top: 5px;
+}
+.modifier {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.supprimer {
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+td:last-child {
+  white-space: nowrap;
+}
+
+td button {
+  margin: 3px;
+}
+tbody tr.rupture {
+  background-color: #fdecea;
+  color: #c0392b;
+  font-weight: bold;
+}
